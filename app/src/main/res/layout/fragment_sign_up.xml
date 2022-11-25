@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.SignUpFragment">
+
+
+        <EditText
+            android:id="@+id/emailEdtTextSignUp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/input_background"
+            android:drawableStart="@drawable/ic_profile"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:textColorHint="@color/customTextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/passwordEdtTextSignUp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/input_background"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="5dp"
+            android:ems="10"
+
+            android:hint="Password"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:textColorHint="@color/customTextColor"
+            app:layout_constraintEnd_toEndOf="@+id/emailEdtTextSignUp"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/emailEdtTextSignUp"
+            app:layout_constraintTop_toBottomOf="@+id/lastNameEdtText" />
+
+        <EditText
+            android:id="@+id/passwordAgainEdtTextSignUp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/input_background"
+            android:drawableStart="@drawable/ic_password_open"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Password Again"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:textColorHint="@color/customTextColor"
+            app:layout_constraintEnd_toEndOf="@+id/emailEdtTextSignUp"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/emailEdtTextSignUp"
+            app:layout_constraintTop_toBottomOf="@+id/passwordEdtTextSignUp" />
+
+
+        <TextView
+            android:id="@+id/signUpButton"
+            android:layout_width="126dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/loginbtn_background"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.852"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/phoneNumberText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/input_background"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingStart="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/emailEdtTextSignUp"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/emailEdtTextSignUp"
+            app:layout_constraintTop_toBottomOf="@+id/passwordAgainEdtTextSignUp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Register"
+            android:gravity="center"
+            android:textColor="#85959A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/firstNameEdtText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/input_background"
+            android:drawableStart="@drawable/ic_profile"
+            android:drawablePadding="5dp"
+            android:ems="10"
+
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:textColorHint="@color/customTextColor"
+            app:layout_constraintEnd_toEndOf="@+id/emailEdtTextSignUp"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/emailEdtTextSignUp"
+            app:layout_constraintTop_toBottomOf="@+id/emailEdtTextSignUp" />
+
+        <EditText
+            android:id="@+id/lastNameEdtText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/input_background"
+            android:drawableStart="@drawable/ic_profile"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:textColorHint="@color/customTextColor"
+            app:layout_constraintEnd_toEndOf="@+id/emailEdtTextSignUp"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/emailEdtTextSignUp"
+            app:layout_constraintTop_toBottomOf="@+id/firstNameEdtText" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/countryTextFieldLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:hint="@string/selectCountry"
+            app:layout_constraintEnd_toEndOf="@+id/emailEdtTextSignUp"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="@+id/emailEdtTextSignUp"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNumberText">
+
+            <AutoCompleteTextView
+                android:id="@+id/countrySelectText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"></AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cityTextFieldLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/selectCity"
+            app:layout_constraintEnd_toEndOf="@+id/emailEdtTextSignUp"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="@+id/emailEdtTextSignUp"
+            app:layout_constraintTop_toBottomOf="@+id/countryTextFieldLayout">
+
+            <AutoCompleteTextView
+                android:id="@+id/citySelectText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none">
+
+            </AutoCompleteTextView>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/shortAddress"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/input_background"
+            android:drawableStart="@drawable/ic_address"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Short Adrress"
+            android:inputType="textLongMessage"
+            android:paddingStart="8dp"
+            android:textColorHint="@color/customTextColor"
+            app:layout_constraintEnd_toEndOf="@+id/emailEdtTextSignUp"
+            app:layout_constraintStart_toStartOf="@+id/emailEdtTextSignUp"
+            app:layout_constraintTop_toBottomOf="@+id/cityTextFieldLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

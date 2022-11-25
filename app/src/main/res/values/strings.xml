@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">E Commerce App New</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="selectCountry">Country</string>
+    <string name="selectCity">City</string>
+    <string name="web_client_id">54963327-g0vos615c74gg4b6q6u0hec5smmvrr3l.apps.googleusercontent.com</string>
+    <string name="sign_out">Sign Out</string>
+</resources>
